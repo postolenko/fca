@@ -30,6 +30,11 @@
 
 html {
     -webkit-text-size-adjust: 100%;
+    font-family: "ArnoPro";
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
 }
 
 html,
@@ -166,7 +171,7 @@ section {
 
 h1 {
     letter-spacing: 1px;
-    font-family: "ArnoPro";
+    font-family: "ArnoPro", "Arial", "Verdana", sans-serif;
     font-size: 62px;
     line-height: 69px;
     font-weight: 300;
@@ -174,27 +179,46 @@ h1 {
 }
 
 h2 {
-
+    text-align: center;
+    font-family: "ArnoPro", "Arial", "Verdana", sans-serif;
+    font-size: 46px;
+    line-height: 57px;
+    font-weight: 300;
+    color: #000000;
 }
 
 h3 {
-
-}
-
-h4 {
-
+    font-family: "ArnoPro", "Arial", "Verdana", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
 }
 
 p {
-
+    font-family: "ArnoPro", "Arial", "Verdana", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
 }
 
 a {
     text-decoration: none;
+    font-family: "ArnoPro", "Arial", "Verdana", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
 }
 
 li {
     list-style: none;
+    font-family: "ArnoPro", "Arial", "Verdana", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
 }
 
 img {
@@ -406,9 +430,9 @@ textarea:focus {
 
 .header_site {
     width: 100%;
-    padding: 15px 0;
-    z-index: 2;
-    position: fixed;
+    padding: 15px 0 4px 0;
+    z-index: 3;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -428,19 +452,9 @@ textarea:focus {
     padding: 10px 0 10px 5px;
 }
 
-.main_nav_wrapp {
-/*    display: inline-block;
-    vertical-align: top;*/
-    /*margin: 13px 5px;*/
-}
-
 .main_nav {
     margin: 0 -8px;
     text-align: right;
-}
-
-.main_nav li {
-
 }
 
 .main_nav li {
@@ -451,7 +465,6 @@ textarea:focus {
 
 .main_nav li a {
     border-bottom: 1px solid transparent;
-    font-family: "ArnoPro";
     font-size: 20px;
     line-height: 20px;
     font-weight: 300;
@@ -512,7 +525,7 @@ textarea:focus {
     display: block;
     width: 27px;
     height: 2px;
-    background: #466896;
+    background: #ffffff;
     margin: 0 auto 7px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
@@ -545,7 +558,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #ffffff;
 }
 
 .respmenubtn.active span {
@@ -553,7 +566,7 @@ textarea:focus {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #ffffff;
 }
 
 .respmenubtn.active span:last-child {
@@ -578,19 +591,59 @@ textarea:focus {
     transform: rotate(-45deg);
 }
 
+.header_site_2 .respmenubtn span {
+    background: #000000;
+}
+
+.header_site_2 .respmenubtn:hover span {
+    background: #000000;
+}
+
+.header_site_2 .respmenubtn.active span {
+    background: #ffffff;
+}
+
 /* ----- / Responsive Menu Button ------ */
+
+/*-- Header 2 --*/
+
+.main_nav_2 li a {
+    color: #6b6b6b;
+}
+
+.main_nav_2 li a:link,
+.main_nav_2 li a:visited {
+    color: #6b6b6b;
+    border-bottom: 1px solid transparent;
+}
+
+.main_nav_2 li a:active,
+.main_nav_2 li a.active {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.main_nav_2 li a:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+/*-- /Header 2 --*/
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
 
-/*-- Section 1 - Main --*/
-
-.promo_main {
+section {
     display: flex;
     display: -webkit-flex;
     align-items: center;
     min-height: 100vh;
+}
+
+/*-- Section 1 - Main --*/
+
+.promo_main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -621,18 +674,459 @@ textarea:focus {
 
 .h1_wrapp p {
     padding: 3px 0;
-    font-family: "ArnoPro";
     font-size: 20px;
     line-height: 25px;
     font-weight: 300;
     color: #ffffff;
 }
 
-.promo_main .h1_wrapp {
+/*-- /Section 1 - Main --*/
 
+/*-- Section 1 - About --*/
+
+.grey_bg {
+    background-color: #e0e0e0;
 }
 
-/*-- /Section 1 - Main --*/
+.article {
+    display: flex;
+    display: -webkit-flex;
+    margin: 9px 0;
+}
+
+.article .left_col {
+    width: calc(50% - 35px);
+    margin: 35px 35px 35px 0;
+}
+
+.article .right_col {
+    width: calc(50% - 35px);
+    margin: 35px 0 35px 35px;
+    padding: 93px 9%;
+    background-color: #ffffff;
+}
+
+.image_box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article p {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
+}
+
+/*-- /Section 1 - About --*/
+
+/*-- Section 1 - Activity --*/
+
+.article_2 .left_col {
+    order: 2;
+    margin: 35px 0 35px 35px;
+}
+
+.article_2 .right_col {
+    order: 1;
+    margin: 35px 35px 35px 0;
+}
+
+.article ol li {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
+}
+
+.article h3 {
+    padding: 10px 0;
+    font-size: 19px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #0d0d0d;
+}
+
+.article ol {
+    padding: 10px 0;
+}
+
+.article ol > li {
+    margin-bottom: 14px;
+    list-style: initial;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+.article ol li {
+    padding: 10px 0;
+    font-size: 19px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #0d0d0d;
+}
+
+.article ol li li {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-indent: 13px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d0d0d;
+}
+
+.article ol li > ol li:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 3px;
+    height: 3px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #0d0d0d;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+/*-- /Section 1 - Activity --*/
+
+/*-- Section 1 - Gallery 01 --*/
+
+.gallery_nav {
+    display: flex;
+    display: -webkit-flex;
+    background-color: #e0e0e0;
+    justify-content: space-around;
+    margin: 0 0 12px 0;
+    border: 2px solid #e0e0e0;
+}
+
+.gallery_nav li {
+    width: 100%;
+    display: flex;
+}
+
+.gallery_nav li a {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.gallery_nav li a.active {
+    background: #ffffff;
+}
+
+.gallery_nav li a:hover {
+    background: #ffffff;
+}
+
+.gallery_templ {
+    margin: 42px 0;
+}
+
+.gallery {
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 31px;
+}
+
+.gallery .left_col {
+    width: calc(100% - 290px);
+    padding: 10px 20px 10px 0;
+}
+
+.gallery .right_col {
+    width: 290px;
+    padding: 10px 0 10px 20px;
+}
+
+.big_slider .img_box {
+    height: 560px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.miniature_slider {
+    height: 585px;
+    margin-top: -8px;
+}
+
+.miniature_slider .slide {
+    padding: 7px 0;
+}
+
+.miniature_slider .img_box {
+    height: 175px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.miniature_slider .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.gallery_desc {
+    padding: 18px 0;
+}
+
+.gallery_desc p {
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 300;
+    color: #191919;
+}
+
+.gallery_desc p a {
+    border-bottom: 1px solid transparent;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 300;
+    color: #191919;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.gallery_desc p a:link,
+.gallery_desc p a:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.gallery_desc p a:active,
+.gallery_desc p a.active {
+    border-bottom: 1px solid #191919;
+}
+
+.gallery_desc p a:hover {
+    border-bottom: 1px solid #191919;
+}
+
+.gallery_desc ol li {
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 300;
+    color: #191919;
+}
+
+/*-- /Section 1 - Gallery 01 --*/
+
+/*-- Section 1 - News --*/
+
+.news_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 7px -35px 46px -35px;
+}
+
+.news_thumb {
+    display: block;
+    width: calc(33.33% - 70px);
+    margin: 35px;
+}
+
+.news_thumb .img_box {
+    height: 220px;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.news_thumb .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.news_thumb .img_box p {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 41px;
+    line-height: 42px;
+    font-weight: 300;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.news_thumb .descript {
+    margin-top: 25px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+
+.news_thumb .descript p {
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #000000;
+}
+
+/*-- /Section 1 - News --*/
+
+/*-- Section 1 - News Page --*/
+
+.news_article {
+    margin: 40px 0;
+}
+
+.news_article p {
+    padding: 12px 0;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.date {
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.news_article img {
+    margin: 14px 0;
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*-- /Section 1 - News Page --*/
+
+/*-- Section 1 - Docs --*/
+
+.doc_thumbnails {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 41px -1%;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.doc_thumb {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 30%;
+    margin: 10px 1%;
+}
+
+.doc_thumb img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 500px;
+}
+
+/*-- /Section 1 - Docs --*/
+
+/*-- Section 1 - Contacts --*/
+
+.map {
+    height: 550px;
+    margin: 42px 0;
+}
+
+.map_tooltip {
+    padding: 31px 20px;
+}
+
+.map_tooltip p {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.gm-style .gm-style-iw-c {
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: none;
+    box-shadow: none
+}
+
+.gm-style .gm-style-iw-t::after {
+    display: none;
+}
+
+/*-- /Section 1 - Contacts --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -653,9 +1147,12 @@ footer {
 }
 
 .footer_section p {
-    font-family: "ArnoPro";
     font-size: 20px;
     line-height: 23px;
     font-weight: 300;
     color: #ffffff;
+}
+
+.footer_section_2 p {
+    color: #201600;
 }
